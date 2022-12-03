@@ -7,7 +7,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
 
-public class CuttingMono : MonoBehaviour
+public class CutMono : MonoBehaviour
 {
     [SerializeField] private GameObject cutterGameObject;
     [SerializeField] private GameObject pivotGameObject;

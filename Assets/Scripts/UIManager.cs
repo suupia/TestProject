@@ -6,14 +6,21 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private Button button;
-    [SerializeField] private CuttingMono cuttingMono;
+    [SerializeField] private Button cutButton;
+    [SerializeField] private Button damageButton;
+    [SerializeField] private CutMono cutMono;
+    [SerializeField] private DamageMono damageMono;
 
     private void Start()
     {
-        button.onClick.AddListener(() =>
+        cutButton.onClick.AddListener(() =>
         {
-            cuttingMono.Cut();
+            cutMono.Cut();
+        });
+
+        damageButton.onClick.AddListener(() =>
+        {
+            damageMono.Damage();
         });
     }
 
